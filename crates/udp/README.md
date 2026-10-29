@@ -87,6 +87,12 @@ Implements [BEP 015](https://www.bittorrent.org/beps/bep_0015.html) ([more detai
 - Ignores IP addresses sent in announce requests. The packet source IP is always used.
 - Doesn't track the number of torrent downloads (0 is always sent). 
 
+Also supports [BEP 021](https://www.bittorrent.org/beps/bep_0021.html)
+partial-seed announcements using UDP announce event `4`. This is an
+implementation convention, not part of BEP 15. Paused peers remain in the
+swarm and count as incomplete; the standard UDP scrape response does not
+include a separate `downloaders` statistic.
+
 ## Copyright and license
 
 Copyright (c) Joakim Frostegård

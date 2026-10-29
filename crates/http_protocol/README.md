@@ -4,6 +4,7 @@ HTTP BitTorrent tracker message parsing and serialization.
 
 [BEP 003]: https://www.bittorrent.org/beps/bep_0003.html
 [BEP 007]: https://www.bittorrent.org/beps/bep_0007.html
+[BEP 021]: https://www.bittorrent.org/beps/bep_0021.html
 [BEP 023]: https://www.bittorrent.org/beps/bep_0023.html
 [BEP 048]: https://www.bittorrent.org/beps/bep_0048.html
 
@@ -12,4 +13,6 @@ Implements:
     * Only compact responses are supported
   * [BEP 023]: Compact HTTP responses
   * [BEP 007]: IPv6 support
+  * [BEP 021]: Parses and serializes `event=paused` announce requests and
+    `downloaders` in scrape statistics.
   * [BEP 048]: HTTP scrape support

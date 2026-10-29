@@ -94,6 +94,7 @@ cargo run --release -p aquatic_http_load_test -- --help
 
 [BEP 003]: https://www.bittorrent.org/beps/bep_0003.html
 [BEP 007]: https://www.bittorrent.org/beps/bep_0007.html
+[BEP 021]: https://www.bittorrent.org/beps/bep_0021.html
 [BEP 023]: https://www.bittorrent.org/beps/bep_0023.html
 [BEP 048]: https://www.bittorrent.org/beps/bep_0048.html
 
@@ -103,6 +104,9 @@ Implements:
     * Only compact responses are supported
   * [BEP 023]: Compact HTTP responses
   * [BEP 007]: IPv6 support
+  * [BEP 021]: Partial-seed tracking (`event=paused`) and `downloaders` in
+    targeted scrape responses. Paused peers count as incomplete, but not as
+    active downloaders.
   * [BEP 048]: HTTP scrape support. Notes:
     * Doesn't allow full scrapes, i.e. of all registered info hashes
 
